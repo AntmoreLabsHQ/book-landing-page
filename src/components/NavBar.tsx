@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faHome, faUsers, faQuestionCircle, faBars } from '@fortawesome/free-solid-svg-icons';
-import '../styles/NavBar.css';
-
+import '../styles/NavBar.css'
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [scrolling, setScrolling] = useState<boolean>(false);
@@ -42,7 +41,7 @@ const NavBar: React.FC = () => {
           </div>
 
           {/* Nav Links - Desktop View */}
-          <div className="md:flex space-x-8">
+          <div className="nav-options ">
             <a href="/" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Home
             </a>
