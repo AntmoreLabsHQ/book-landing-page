@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import quizImage from '../assets/city.jpg';
+import quizImage from '../../assets/city.jpg';
 
 interface Question {
   question: string;
@@ -28,7 +28,7 @@ const questions: Question[] = [
   },
 ];
 
-const QuizSection: React.FC = () => {
+const Quiz: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [showResult, setShowResult] = useState<boolean>(false);
@@ -129,4 +129,4 @@ const QuizSection: React.FC = () => {
   );
 };
 
-export default QuizSection;
+export default Quiz;

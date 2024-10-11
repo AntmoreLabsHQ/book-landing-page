@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import Button from '../../base/Button';
 
-const FooterSection: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,9 +16,7 @@ const FooterSection: React.FC = () => {
               placeholder="Your email address"
               className="p-2 rounded-l-md text-gray-900 focus:outline-none"
             />
-            <button className="bg-[#2a4dc1] text-white p-2 rounded-r-md hover:bg-[#173bb1] transition duration-300">
-              Subscribe
-            </button>
+            <Button className='bg-[#2a4dc1] text-white p-2 rounded-r-md hover:bg-[#173bb1] transition duration-300' label='Subscribe'/>
           </div>
         </div>
 
@@ -44,4 +43,4 @@ const FooterSection: React.FC = () => {
   );
 };
 
-export default FooterSection;
+export default Footer;

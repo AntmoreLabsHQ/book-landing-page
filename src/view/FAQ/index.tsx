@@ -2,14 +2,14 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
-import '../styles/FaqSection.css';
+import '../../styles/FaqSection.css';
 
 interface FAQ {
   question: string;
   answer: string;
 }
 
-const FAQSection: React.FC = () => {
+const FAQ: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const faqs: FAQ[] = [
@@ -74,4 +74,4 @@ const FAQSection: React.FC = () => {
   );
 };
 
-export default FAQSection;
+export default FAQ;

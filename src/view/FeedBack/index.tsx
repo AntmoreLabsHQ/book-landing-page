@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import '../styles/FaqSection.css';
+import '../../styles/FaqSection.css';
 
-const FeedbackFormSection: React.FC = () => {
+const FeedBack: React.FC = () => {
   const [rating, setRating] = useState<number>(0);
   const [hover, setHover] = useState<number>(0);
   const [feedback, setFeedback] = useState<string>('');
@@ -128,4 +128,4 @@ const FeedbackFormSection: React.FC = () => {
   );
 };
 
-export default FeedbackFormSection;
+export default FeedBack;

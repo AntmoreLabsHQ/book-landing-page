@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldAlt, faSkullCrossbones, faFire, faBolt } from '@fortawesome/free-solid-svg-icons';
-import c2 from '../assets/c2.jpg';
-import c3 from '../assets/c3.jpg';
-import c4 from '../assets/c4.jpg';
-import c5 from '../assets/c5.jpg';
+import c2 from '../../assets/c2.jpg';
+import c3 from '../../assets/c3.jpg';
+import c4 from '../../assets/c4.jpg';
+import c5 from '../../assets/c5.jpg';
 import { motion } from 'framer-motion';
 
 interface Character {
@@ -14,7 +14,7 @@ interface Character {
   imageUrl: string;
 }
 
-const CharacterCards: React.FC = () => {
+const Character: React.FC = () => {
   const characters: Character[] = [
     {
       name: 'Inflare',
@@ -51,7 +51,7 @@ const CharacterCards: React.FC = () => {
       initial={{ y: 10, scale: 0.5 }}
       whileInView={{ y: 0, scale: 1 }}
       transition={{ duration: 1 }}
-      className="px-8"
+      className="px-8 py-16"
     >
       <h2 className="text-4xl font-bold text-white text-center mb-12">Meet the Heroes</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -82,4 +82,4 @@ const CharacterCards: React.FC = () => {
   );
 };
 
-export default CharacterCards;
+export default Character;

@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faShieldAlt, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import heroImage from '../assets/WhatsApp.jpg'; 
+import heroImage from '../../assets/WhatsApp.jpg'; 
 import {motion} from 'framer-motion';
 
 const AboutBook: React.FC = () => {
   return (
-    <motion.div initial={{ y: 10, scale: 0.5 }} whileInView={{ y: 0, scale: 1 }} transition={{ duration: 1 }} className="text-white py-24 px-4 sm:px-6 lg:px-8 mt-16 lg:mt-24" >
-      <div className="max-w-7xl mx-auto space-y-12">
+    <motion.div initial={{ y: 10, scale: 0.5 }} whileInView={{ y: 0, scale: 1 }} transition={{ duration: 1 }} className="text-white  px-4 sm:px-6 lg:px-8 mt-16 lg:mt-24" >
+      <div className="  mx-auto space-y-12">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-indigo-500">
             About <span className="text-white">Money Mania: The Rise of Inflare</span>
