@@ -123,7 +123,7 @@ const CommunityReviews: React.FC = () => {
               <input
                 type="text"
                 placeholder="Search review text"
-                className="border bg-[#17202E] md:py-5  xl:py-3 placeholder:md:text-2xl placeholder:xl:text-lg  p-2 rounded-full w-full px-3 outline-none md:w-3/4 xl:w-full"
+                className="border bg-[#17202E] md:py-5  xl:py-2 placeholder:md:text-2xl placeholder:xl:text-lg  p-2 rounded-full w-full px-3 outline-none md:w-3/4 xl:w-full"
               />
               <Button
                 label="Filter"
@@ -133,7 +133,7 @@ const CommunityReviews: React.FC = () => {
             </div>
 
             {/* Review List */}
-            <div className=" w-full flex flex-col gap-5 mt-5  md:h-[40vh] xl:h-[70vh] overflow-hidden  overflow-y-scroll   h-[60vh]">
+            <div className=" w-full flex flex-col gap-5 mt-5  md:h-[40vh] xl:h-[70vh] overflow-hidden  overflow-y-scroll no-scrollbar  h-[60vh]">
               {reviews.map((review, index) => (
                 <div
                   id="comment"
@@ -145,10 +145,10 @@ const CommunityReviews: React.FC = () => {
                     <img
                       src={`https://i.pravatar.cc/50?img=${index + 1}`}
                       alt="avatar"
-                      className="xl:w-16 xl:h-16 md:w-24 md:h-24 w-14 h-14 rounded-full mr-4"
+                      className="xl:w-12 xl:h-12 md:w-24 md:h-24 w-14 h-14 rounded-full mr-4"
                     />
                     <div className="flex flex-col gap-1">
-                      <div className="font-bold xl:text-xl md:text-2xl">{review.author}</div>
+                      <div className="font-bold xl:text-xl xl:font-normal md:text-2xl">{review.author}</div>
 
                       <div className="flex  xl:gap-3 gap-1    flex-col xl:flex-row xl:justify-center xl:items-center justify-between">
                         <div className=" gap-1 flex justify-center items-center">
@@ -163,13 +163,13 @@ const CommunityReviews: React.FC = () => {
                             />
                           ))}
                         </div>
-                        <h1 className=" ml-2 text-xs xl:text-lg text-gray-500 text-start md:text-xl ">{review.date}</h1>
+                        <h1 className=" ml-2 text-xs xl:text-sm text-gray-500 text-start md:text-xl ">{review.date}</h1>
                       </div>
                     </div>
                   </div>
                   {/* Review Rating */}
                   {/* Review Text */}
-                  <p className="xl:text-lg text-sm md:text-xl font-medium">{review.content}</p>
+                  <p className="xl:text-lg text-sm md:text-xl font-medium xl:font-normal">{review.content}</p>
                   <div className="flex xl:items-center  gap-2 space-x-4 text-xs flex-col xl:flex-row xl:text-base text-gray-500 ">
                     <div className="flex justify-start gap-2 md:text-xl xl:text-base">
                     <span>{review.likes} likes</span>
